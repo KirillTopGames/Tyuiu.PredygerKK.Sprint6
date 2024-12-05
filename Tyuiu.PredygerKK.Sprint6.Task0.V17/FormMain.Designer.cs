@@ -95,6 +95,8 @@ namespace Tyuiu.PredygerKK.Sprint6.Task0.V17
             // 
             // TextBoxResultText_PKK
             // 
+            TextBoxResultText_PKK.BackColor = SystemColors.Control;
+            TextBoxResultText_PKK.ForeColor = SystemColors.HotTrack;
             TextBoxResultText_PKK.Location = new Point(587, 299);
             TextBoxResultText_PKK.Name = "TextBoxResultText_PKK";
             TextBoxResultText_PKK.ReadOnly = true;
@@ -111,6 +113,7 @@ namespace Tyuiu.PredygerKK.Sprint6.Task0.V17
             TextBoxResult_PKK.ReadOnly = true;
             TextBoxResult_PKK.Size = new Size(125, 27);
             TextBoxResult_PKK.TabIndex = 6;
+            TextBoxResult_PKK.TextChanged += TextBoxResult_PKK_TextChanged;
             // 
             // SolveButton_PKK
             // 
@@ -150,6 +153,7 @@ namespace Tyuiu.PredygerKK.Sprint6.Task0.V17
             Controls.Add(pictureBoxFormula_PKK);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 0 | Вариант 17 | Предыгер К.К.";
+            Load += FormMain_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_PKK).EndInit();
             ResumeLayout(false);
             PerformLayout();

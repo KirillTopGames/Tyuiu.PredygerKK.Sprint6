@@ -34,5 +34,15 @@ namespace Tyuiu.PredygerKK.Sprint6.Task0.V17
         {
             MessageBox.Show("Таск 0 выполнил студент группы ПКТб-24-1 Предыгер Кирилл Константинович", "Сообщение");
         }
+
+        private void TextBoxResult_PKK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
