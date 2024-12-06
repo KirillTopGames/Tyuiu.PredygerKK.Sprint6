@@ -46,20 +46,21 @@
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(12, 12);
+            textBox1.Location = new Point(10, 9);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(586, 174);
+            textBox1.Size = new Size(513, 131);
             textBox1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(36, -2);
+            label1.Location = new Point(32, -2);
             label1.Name = "label1";
-            label1.Size = new Size(88, 28);
+            label1.Size = new Size(68, 21);
             label1.TabIndex = 1;
             label1.Text = "Условие";
             // 
@@ -67,11 +68,12 @@
             // 
             textBox2.BackColor = SystemColors.ButtonHighlight;
             textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(24, 29);
+            textBox2.Location = new Point(21, 22);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(562, 146);
+            textBox2.Size = new Size(492, 110);
             textBox2.TabIndex = 2;
             textBox2.Text = "Дан массив 5 на 5 элементов. Заменить четные значения в пятой строке на 0.\r\n\r\nРезультат вывести в DataGridView.\r\n\r\nГрафический интерфейс оформить по шаблону из лекции.\r\n";
             // 
@@ -80,9 +82,10 @@
             HelpButton_PKK.AutoSize = true;
             HelpButton_PKK.BackColor = Color.FromArgb(192, 192, 255);
             HelpButton_PKK.Font = new Font("Bahnschrift SemiBold Condensed", 20F, FontStyle.Bold);
-            HelpButton_PKK.Location = new Point(783, 12);
+            HelpButton_PKK.Location = new Point(685, 9);
+            HelpButton_PKK.Margin = new Padding(3, 2, 3, 2);
             HelpButton_PKK.Name = "HelpButton_PKK";
-            HelpButton_PKK.Size = new Size(56, 56);
+            HelpButton_PKK.Size = new Size(49, 43);
             HelpButton_PKK.TabIndex = 4;
             HelpButton_PKK.Text = "?";
             HelpButton_PKK.UseVisualStyleBackColor = false;
@@ -91,30 +94,32 @@
             // textBox3
             // 
             textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(11, 254);
+            textBox3.Location = new Point(10, 190);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
-            textBox3.Size = new Size(267, 267);
+            textBox3.Size = new Size(234, 201);
             textBox3.TabIndex = 5;
             // 
             // textBox4
             // 
             textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(572, 254);
+            textBox4.Location = new Point(500, 190);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
-            textBox4.Size = new Size(267, 267);
+            textBox4.Size = new Size(234, 201);
             textBox4.TabIndex = 6;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(24, 237);
+            label2.Location = new Point(21, 178);
             label2.Name = "label2";
-            label2.Size = new Size(130, 28);
+            label2.Size = new Size(102, 21);
             label2.TabIndex = 7;
             label2.Text = "Ввод данных";
             // 
@@ -122,9 +127,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(587, 237);
+            label3.Location = new Point(514, 178);
             label3.Name = "label3";
-            label3.Size = new Size(144, 28);
+            label3.Size = new Size(113, 21);
             label3.TabIndex = 8;
             label3.Text = "Вывод данных";
             // 
@@ -133,9 +138,10 @@
             SolveButton_PKK.AutoSize = true;
             SolveButton_PKK.BackColor = Color.FromArgb(192, 255, 192);
             SolveButton_PKK.Font = new Font("Bahnschrift SemiBold Condensed", 16.5F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SolveButton_PKK.Location = new Point(315, 360);
+            SolveButton_PKK.Location = new Point(276, 270);
+            SolveButton_PKK.Margin = new Padding(3, 2, 3, 2);
             SolveButton_PKK.Name = "SolveButton_PKK";
-            SolveButton_PKK.Size = new Size(219, 47);
+            SolveButton_PKK.Size = new Size(192, 37);
             SolveButton_PKK.TabIndex = 9;
             SolveButton_PKK.Text = "Преобразовать";
             SolveButton_PKK.UseVisualStyleBackColor = false;
@@ -149,28 +155,33 @@
             DataGridViewFunction_PKK.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
             DataGridViewFunction_PKK.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataGridViewFunction_PKK.ColumnHeadersVisible = false;
-            DataGridViewFunction_PKK.Location = new Point(24, 268);
+            DataGridViewFunction_PKK.Location = new Point(21, 201);
+            DataGridViewFunction_PKK.Margin = new Padding(3, 2, 3, 2);
             DataGridViewFunction_PKK.Name = "DataGridViewFunction_PKK";
             DataGridViewFunction_PKK.RowHeadersVisible = false;
             DataGridViewFunction_PKK.RowHeadersWidth = 51;
-            DataGridViewFunction_PKK.Size = new Size(240, 240);
+            DataGridViewFunction_PKK.Size = new Size(210, 180);
             DataGridViewFunction_PKK.TabIndex = 10;
             DataGridViewFunction_PKK.CellContentClick += DataGridViewFunction_PKK_CellContentClick;
             // 
             // DataGridViewResult_PKK
             // 
             DataGridViewResult_PKK.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DataGridViewResult_PKK.Location = new Point(587, 268);
+            DataGridViewResult_PKK.ColumnHeadersVisible = false;
+            DataGridViewResult_PKK.Location = new Point(514, 201);
+            DataGridViewResult_PKK.Margin = new Padding(3, 2, 3, 2);
             DataGridViewResult_PKK.Name = "DataGridViewResult_PKK";
+            DataGridViewResult_PKK.ReadOnly = true;
+            DataGridViewResult_PKK.RowHeadersVisible = false;
             DataGridViewResult_PKK.RowHeadersWidth = 51;
-            DataGridViewResult_PKK.Size = new Size(240, 240);
+            DataGridViewResult_PKK.Size = new Size(210, 180);
             DataGridViewResult_PKK.TabIndex = 11;
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(851, 533);
+            ClientSize = new Size(745, 400);
             Controls.Add(DataGridViewResult_PKK);
             Controls.Add(DataGridViewFunction_PKK);
             Controls.Add(SolveButton_PKK);
@@ -182,6 +193,7 @@
             Controls.Add(textBox2);
             Controls.Add(label1);
             Controls.Add(textBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 3 | Вариант 20 | Предыгер К.К.";
             Load += FormMain_Load;

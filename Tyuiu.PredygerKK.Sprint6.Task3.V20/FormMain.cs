@@ -49,14 +49,25 @@ namespace Tyuiu.PredygerKK.Sprint6.Task3.V20
                                        { 13, 7, 8, -3, -15 },
                                        { 2, -20, 12, -14, 4 }, };
 
+            int rows = matrix.GetUpperBound(0) + 1;
+            int columns = matrix.GetUpperBound(1) + 1;
+
+            DataGridViewResult_PKK.RowCount = rows;
+            DataGridViewResult_PKK.ColumnCount = columns;
+
+            
             try
             {
+                for (int i = 0; i < 5; i++)
+                {
+                    DataGridViewResult_PKK.Columns[i].Width = 40;
+                }
 
                 for (int i = 0; i < 5; i++)
                 {
                     for (int j = 0; j < 5; j++)
                     {
-                        this.DataGridViewResult_PKK.Rows.Add(Convert.ToString(matrix[i,j]));
+                        DataGridViewResult_PKK.Rows[i].Cells[j].Value = Convert.ToString(ds.Calculate(matrix)[i, j]);
                     }
                 }
             }
