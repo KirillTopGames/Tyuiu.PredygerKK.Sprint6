@@ -67,7 +67,7 @@
             // textBox2
             // 
             textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(788, 12);
+            textBox2.Location = new Point(831, 12);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
@@ -88,7 +88,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(799, -2);
+            label2.Location = new Point(842, -2);
             label2.Name = "label2";
             label2.Size = new Size(130, 28);
             label2.TabIndex = 3;
@@ -119,7 +119,7 @@
             HelpButton_PKK.AutoSize = true;
             HelpButton_PKK.BackColor = Color.FromArgb(192, 192, 255);
             HelpButton_PKK.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            HelpButton_PKK.Location = new Point(1367, 20);
+            HelpButton_PKK.Location = new Point(1410, 20);
             HelpButton_PKK.Name = "HelpButton_PKK";
             HelpButton_PKK.Size = new Size(51, 51);
             HelpButton_PKK.TabIndex = 6;
@@ -131,7 +131,7 @@
             // 
             InputTextBoxStart_PKK.BackColor = Color.FromArgb(255, 255, 192);
             InputTextBoxStart_PKK.Font = new Font("Segoe UI", 12F);
-            InputTextBoxStart_PKK.Location = new Point(799, 54);
+            InputTextBoxStart_PKK.Location = new Point(842, 54);
             InputTextBoxStart_PKK.Name = "InputTextBoxStart_PKK";
             InputTextBoxStart_PKK.Size = new Size(125, 34);
             InputTextBoxStart_PKK.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             InputTextBoxStop_PKK.BackColor = Color.FromArgb(255, 255, 192);
             InputTextBoxStop_PKK.Font = new Font("Segoe UI", 12F);
-            InputTextBoxStop_PKK.Location = new Point(799, 139);
+            InputTextBoxStop_PKK.Location = new Point(842, 139);
             InputTextBoxStop_PKK.Name = "InputTextBoxStop_PKK";
             InputTextBoxStop_PKK.Size = new Size(125, 34);
             InputTextBoxStop_PKK.TabIndex = 8;
@@ -149,7 +149,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
-            label3.Location = new Point(799, 29);
+            label3.Location = new Point(842, 29);
             label3.Name = "label3";
             label3.Size = new Size(111, 20);
             label3.TabIndex = 9;
@@ -159,7 +159,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
-            label4.Location = new Point(799, 116);
+            label4.Location = new Point(842, 116);
             label4.Name = "label4";
             label4.Size = new Size(100, 20);
             label4.TabIndex = 10;
@@ -169,7 +169,7 @@
             // 
             SolveButton_PKK.BackColor = Color.FromArgb(192, 255, 192);
             SolveButton_PKK.Font = new Font("Segoe UI", 13F);
-            SolveButton_PKK.Location = new Point(1039, 21);
+            SolveButton_PKK.Location = new Point(1082, 21);
             SolveButton_PKK.Name = "SolveButton_PKK";
             SolveButton_PKK.Size = new Size(137, 67);
             SolveButton_PKK.TabIndex = 11;
@@ -181,7 +181,7 @@
             // 
             SaveButton_PKK.BackColor = Color.FromArgb(128, 128, 255);
             SaveButton_PKK.Font = new Font("Segoe UI", 13F);
-            SaveButton_PKK.Location = new Point(1039, 106);
+            SaveButton_PKK.Location = new Point(1082, 106);
             SaveButton_PKK.Name = "SaveButton_PKK";
             SaveButton_PKK.Size = new Size(137, 67);
             SaveButton_PKK.TabIndex = 12;
@@ -226,7 +226,7 @@
             ChartFunctionResult_PKK.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             ChartFunctionResult_PKK.Legends.Add(legend1);
-            ChartFunctionResult_PKK.Location = new Point(276, 212);
+            ChartFunctionResult_PKK.Location = new Point(319, 212);
             ChartFunctionResult_PKK.Name = "ChartFunctionResult_PKK";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -244,7 +244,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1439, 539);
+            ClientSize = new Size(1482, 539);
             Controls.Add(ChartFunctionResult_PKK);
             Controls.Add(ResultTextBox_PKK);
             Controls.Add(label5);
@@ -262,7 +262,10 @@
             Controls.Add(label1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1500, 586);
             Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 4 | Вариант 13 | Предыгер К.К.";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ChartFunctionResult_PKK).EndInit();
