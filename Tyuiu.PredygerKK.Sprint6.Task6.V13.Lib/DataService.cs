@@ -6,7 +6,7 @@ namespace Tyuiu.PredygerKK.Sprint6.Task6.V13.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string res = "";
+            string temp_res = "";
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
@@ -15,11 +15,11 @@ namespace Tyuiu.PredygerKK.Sprint6.Task6.V13.Lib
                     string[] words = line.Split(' ');
                     if (words.Length >= 2)
                     {
-                        res += words[words.Length - 2] + " ";
+                        temp_res += words[words.Length - 2] + " ";
                     }
                 }
             }
-            res.Trim();
+            string res = temp_res.Trim();
             return res;
         }
     }

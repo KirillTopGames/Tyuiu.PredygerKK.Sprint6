@@ -19,7 +19,8 @@ namespace _123
                         res += words[words.Length - 2] + " ";
                     }
                 }
-                Console.WriteLine(res);
+                string res_trim = res.Trim();
+                Console.WriteLine(res_trim + "!");
             }
         }
     }
