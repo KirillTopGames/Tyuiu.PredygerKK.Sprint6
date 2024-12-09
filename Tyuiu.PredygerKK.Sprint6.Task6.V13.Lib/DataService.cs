@@ -1,13 +1,12 @@
-﻿using System.IO;
+﻿using tyuiu.cources.programming.interfaces.Sprint6;
 
-namespace _123
+namespace Tyuiu.PredygerKK.Sprint6.Task6.V13.Lib
 {
-    internal class Program
+    public class DataService : ISprint6Task6V13
     {
-        static void Main(string[] args)
+        public string CollectTextFromFile(string path)
         {
             string res = "";
-            string path = Path.Combine("C:", "DataSprint6", "InPutDataFileTask6V13.txt");
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
@@ -19,8 +18,8 @@ namespace _123
                         res += words[words.Length - 2] + " ";
                     }
                 }
-                Console.WriteLine(res);
             }
+            return res;
         }
     }
 }
