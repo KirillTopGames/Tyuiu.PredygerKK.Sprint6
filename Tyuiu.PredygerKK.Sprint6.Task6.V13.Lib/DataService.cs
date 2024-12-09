@@ -19,6 +19,7 @@ namespace Tyuiu.PredygerKK.Sprint6.Task6.V13.Lib
                     }
                 }
             }
+            res.Trim();
             return res;
         }
     }
