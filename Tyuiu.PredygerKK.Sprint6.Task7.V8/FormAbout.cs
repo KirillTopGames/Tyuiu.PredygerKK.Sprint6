@@ -16,5 +16,10 @@ namespace Tyuiu.PredygerKK.Sprint6.Task7.V8
         {
             InitializeComponent();
         }
+
+        private void CloseButton_PKK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -62,8 +62,9 @@
             ButtonsPanel_PKK.Controls.Add(SolveButton_PKK);
             ButtonsPanel_PKK.Dock = DockStyle.Top;
             ButtonsPanel_PKK.Location = new Point(0, 0);
+            ButtonsPanel_PKK.Margin = new Padding(3, 2, 3, 2);
             ButtonsPanel_PKK.Name = "ButtonsPanel_PKK";
-            ButtonsPanel_PKK.Size = new Size(965, 105);
+            ButtonsPanel_PKK.Size = new Size(846, 86);
             ButtonsPanel_PKK.TabIndex = 0;
             // 
             // HelpButton_PKK
@@ -73,9 +74,10 @@
             HelpButton_PKK.Cursor = Cursors.Help;
             HelpButton_PKK.Font = new Font("Georgia", 24F, FontStyle.Bold);
             HelpButton_PKK.ForeColor = Color.White;
-            HelpButton_PKK.Location = new Point(901, 11);
+            HelpButton_PKK.Location = new Point(789, 8);
+            HelpButton_PKK.Margin = new Padding(3, 2, 3, 2);
             HelpButton_PKK.Name = "HelpButton_PKK";
-            HelpButton_PKK.Size = new Size(50, 50);
+            HelpButton_PKK.Size = new Size(44, 45);
             HelpButton_PKK.TabIndex = 2;
             HelpButton_PKK.Text = "?";
             HelpButton_PKK.UseVisualStyleBackColor = false;
@@ -86,9 +88,10 @@
             OpenFileButton_PKK.BackColor = Color.LemonChiffon;
             OpenFileButton_PKK.Cursor = Cursors.Hand;
             OpenFileButton_PKK.Font = new Font("Georgia", 9F, FontStyle.Bold);
-            OpenFileButton_PKK.Location = new Point(11, 11);
+            OpenFileButton_PKK.Location = new Point(17, 9);
+            OpenFileButton_PKK.Margin = new Padding(3, 2, 3, 2);
             OpenFileButton_PKK.Name = "OpenFileButton_PKK";
-            OpenFileButton_PKK.Size = new Size(94, 78);
+            OpenFileButton_PKK.Size = new Size(82, 65);
             OpenFileButton_PKK.TabIndex = 1;
             OpenFileButton_PKK.Text = "Открыть файл";
             toolTip.SetToolTip(OpenFileButton_PKK, "\r\nВыберите файл, который необходимо\r\nпреобразовать по указанному условию");
@@ -102,9 +105,10 @@
             SolveButton_PKK.Enabled = false;
             SolveButton_PKK.Font = new Font("Georgia", 12F, FontStyle.Bold);
             SolveButton_PKK.ForeColor = Color.Black;
-            SolveButton_PKK.Location = new Point(151, 11);
+            SolveButton_PKK.Location = new Point(132, 8);
+            SolveButton_PKK.Margin = new Padding(3, 2, 3, 2);
             SolveButton_PKK.Name = "SolveButton_PKK";
-            SolveButton_PKK.Size = new Size(94, 78);
+            SolveButton_PKK.Size = new Size(82, 65);
             SolveButton_PKK.TabIndex = 0;
             SolveButton_PKK.Text = "Запуск";
             toolTip.SetToolTip(SolveButton_PKK, "\r\nПри нажатии преобразует файл по условию");
@@ -117,10 +121,12 @@
             ConditionPanel_PKK.BorderStyle = BorderStyle.Fixed3D;
             ConditionPanel_PKK.Controls.Add(ConditionGroupBox_PKK);
             ConditionPanel_PKK.Dock = DockStyle.Top;
-            ConditionPanel_PKK.Location = new Point(0, 105);
+            ConditionPanel_PKK.Location = new Point(0, 86);
+            ConditionPanel_PKK.Margin = new Padding(3, 2, 3, 2);
             ConditionPanel_PKK.Name = "ConditionPanel_PKK";
-            ConditionPanel_PKK.Size = new Size(965, 125);
+            ConditionPanel_PKK.Size = new Size(846, 102);
             ConditionPanel_PKK.TabIndex = 1;
+            ConditionPanel_PKK.Paint += ConditionPanel_PKK_Paint;
             // 
             // ConditionGroupBox_PKK
             // 
@@ -128,9 +134,10 @@
             ConditionGroupBox_PKK.Dock = DockStyle.Fill;
             ConditionGroupBox_PKK.Font = new Font("Georgia", 10F, FontStyle.Bold);
             ConditionGroupBox_PKK.Location = new Point(0, 0);
+            ConditionGroupBox_PKK.Margin = new Padding(3, 2, 3, 2);
             ConditionGroupBox_PKK.Name = "ConditionGroupBox_PKK";
-            ConditionGroupBox_PKK.Padding = new Padding(10);
-            ConditionGroupBox_PKK.Size = new Size(961, 121);
+            ConditionGroupBox_PKK.Padding = new Padding(9, 8, 9, 8);
+            ConditionGroupBox_PKK.Size = new Size(842, 98);
             ConditionGroupBox_PKK.TabIndex = 0;
             ConditionGroupBox_PKK.TabStop = false;
             ConditionGroupBox_PKK.Text = "Условие: ";
@@ -140,11 +147,12 @@
             ConditionTextBox_PKK.BackColor = Color.White;
             ConditionTextBox_PKK.Dock = DockStyle.Fill;
             ConditionTextBox_PKK.Font = new Font("Georgia", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ConditionTextBox_PKK.Location = new Point(10, 29);
+            ConditionTextBox_PKK.Location = new Point(9, 24);
+            ConditionTextBox_PKK.Margin = new Padding(3, 2, 3, 2);
             ConditionTextBox_PKK.Multiline = true;
             ConditionTextBox_PKK.Name = "ConditionTextBox_PKK";
             ConditionTextBox_PKK.ReadOnly = true;
-            ConditionTextBox_PKK.Size = new Size(941, 82);
+            ConditionTextBox_PKK.Size = new Size(824, 66);
             ConditionTextBox_PKK.TabIndex = 0;
             ConditionTextBox_PKK.Text = resources.GetString("ConditionTextBox_PKK.Text");
             // 
@@ -152,10 +160,11 @@
             // 
             InputPanel_PKK.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             InputPanel_PKK.Controls.Add(InputGroupBox_PKK);
-            InputPanel_PKK.Location = new Point(0, 230);
+            InputPanel_PKK.Location = new Point(0, 192);
+            InputPanel_PKK.Margin = new Padding(3, 2, 3, 2);
             InputPanel_PKK.Name = "InputPanel_PKK";
-            InputPanel_PKK.Padding = new Padding(10);
-            InputPanel_PKK.Size = new Size(479, 315);
+            InputPanel_PKK.Padding = new Padding(9, 8, 9, 8);
+            InputPanel_PKK.Size = new Size(419, 223);
             InputPanel_PKK.TabIndex = 2;
             // 
             // InputGroupBox_PKK
@@ -163,10 +172,11 @@
             InputGroupBox_PKK.Controls.Add(textBoxIn);
             InputGroupBox_PKK.Dock = DockStyle.Fill;
             InputGroupBox_PKK.Font = new Font("Georgia", 9F, FontStyle.Bold);
-            InputGroupBox_PKK.Location = new Point(10, 10);
+            InputGroupBox_PKK.Location = new Point(9, 8);
+            InputGroupBox_PKK.Margin = new Padding(3, 2, 3, 2);
             InputGroupBox_PKK.Name = "InputGroupBox_PKK";
-            InputGroupBox_PKK.Padding = new Padding(10);
-            InputGroupBox_PKK.Size = new Size(459, 295);
+            InputGroupBox_PKK.Padding = new Padding(9, 8, 9, 8);
+            InputGroupBox_PKK.Size = new Size(401, 207);
             InputGroupBox_PKK.TabIndex = 1;
             InputGroupBox_PKK.TabStop = false;
             InputGroupBox_PKK.Text = "Ввод: ";
@@ -175,22 +185,24 @@
             // 
             textBoxIn.BackColor = Color.White;
             textBoxIn.Dock = DockStyle.Fill;
-            textBoxIn.Location = new Point(10, 28);
+            textBoxIn.Location = new Point(9, 22);
+            textBoxIn.Margin = new Padding(3, 2, 3, 2);
             textBoxIn.Multiline = true;
             textBoxIn.Name = "textBoxIn";
             textBoxIn.ReadOnly = true;
             textBoxIn.ScrollBars = ScrollBars.Vertical;
-            textBoxIn.Size = new Size(439, 257);
+            textBoxIn.Size = new Size(383, 177);
             textBoxIn.TabIndex = 0;
             // 
             // OutputPanel_PKK
             // 
             OutputPanel_PKK.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             OutputPanel_PKK.Controls.Add(OutputGroupBox_PKK);
-            OutputPanel_PKK.Location = new Point(485, 230);
+            OutputPanel_PKK.Location = new Point(424, 192);
+            OutputPanel_PKK.Margin = new Padding(3, 2, 3, 2);
             OutputPanel_PKK.Name = "OutputPanel_PKK";
-            OutputPanel_PKK.Padding = new Padding(10);
-            OutputPanel_PKK.Size = new Size(480, 315);
+            OutputPanel_PKK.Padding = new Padding(9, 8, 9, 8);
+            OutputPanel_PKK.Size = new Size(420, 223);
             OutputPanel_PKK.TabIndex = 3;
             // 
             // OutputGroupBox_PKK
@@ -198,10 +210,11 @@
             OutputGroupBox_PKK.Controls.Add(textBoxOut);
             OutputGroupBox_PKK.Dock = DockStyle.Fill;
             OutputGroupBox_PKK.Font = new Font("Georgia", 9F, FontStyle.Bold);
-            OutputGroupBox_PKK.Location = new Point(10, 10);
+            OutputGroupBox_PKK.Location = new Point(9, 8);
+            OutputGroupBox_PKK.Margin = new Padding(3, 2, 3, 2);
             OutputGroupBox_PKK.Name = "OutputGroupBox_PKK";
-            OutputGroupBox_PKK.Padding = new Padding(10);
-            OutputGroupBox_PKK.Size = new Size(460, 295);
+            OutputGroupBox_PKK.Padding = new Padding(9, 8, 9, 8);
+            OutputGroupBox_PKK.Size = new Size(402, 207);
             OutputGroupBox_PKK.TabIndex = 0;
             OutputGroupBox_PKK.TabStop = false;
             OutputGroupBox_PKK.Text = "Вывод: ";
@@ -210,10 +223,11 @@
             // 
             textBoxOut.BackColor = Color.White;
             textBoxOut.Dock = DockStyle.Fill;
-            textBoxOut.Location = new Point(10, 28);
+            textBoxOut.Location = new Point(9, 22);
+            textBoxOut.Margin = new Padding(3, 2, 3, 2);
             textBoxOut.Multiline = true;
             textBoxOut.Name = "textBoxOut";
-            textBoxOut.Size = new Size(440, 257);
+            textBoxOut.Size = new Size(384, 177);
             textBoxOut.TabIndex = 0;
             // 
             // openFileDialogTask
@@ -227,14 +241,15 @@
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(965, 545);
+            ClientSize = new Size(846, 415);
             Controls.Add(OutputPanel_PKK);
             Controls.Add(InputPanel_PKK);
             Controls.Add(ConditionPanel_PKK);
             Controls.Add(ButtonsPanel_PKK);
-            MinimumSize = new Size(983, 592);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(862, 454);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 6 | Вариант 13 | Предыгер К.К.";

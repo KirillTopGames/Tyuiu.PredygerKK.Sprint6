@@ -31,5 +31,10 @@ namespace Tyuiu.PredygerKK.Sprint6.Task6.V13
             InputGroupBox_PKK.Text += openFileDialogTask.FileName;
             SolveButton_PKK.Enabled = true;
         }
+
+        private void ConditionPanel_PKK_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,12 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormAbout";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
+            CloseButton_PKK = new Button();
+            labelInfo = new Label();
+            pictureBoxAvatar_PKK = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_PKK).BeginInit();
+            SuspendLayout();
+            // 
+            // CloseButton_PKK
+            // 
+            CloseButton_PKK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            CloseButton_PKK.BackColor = SystemColors.ButtonHighlight;
+            CloseButton_PKK.Cursor = Cursors.Hand;
+            CloseButton_PKK.Font = new Font("Georgia", 10F);
+            CloseButton_PKK.Location = new Point(564, 236);
+            CloseButton_PKK.Margin = new Padding(3, 2, 3, 2);
+            CloseButton_PKK.Name = "CloseButton_PKK";
+            CloseButton_PKK.Size = new Size(89, 31);
+            CloseButton_PKK.TabIndex = 5;
+            CloseButton_PKK.Text = "Закрыть";
+            CloseButton_PKK.UseVisualStyleBackColor = false;
+            CloseButton_PKK.Click += CloseButton_PKK_Click;
+            // 
+            // labelInfo
+            // 
+            labelInfo.AutoSize = true;
+            labelInfo.Font = new Font("Georgia", 12F);
+            labelInfo.Location = new Point(246, 11);
+            labelInfo.Name = "labelInfo";
+            labelInfo.Size = new Size(407, 162);
+            labelInfo.TabIndex = 4;
+            labelInfo.Text = resources.GetString("labelInfo.Text");
+            // 
+            // pictureBoxAvatar_PKK
+            // 
+            pictureBoxAvatar_PKK.BorderStyle = BorderStyle.FixedSingle;
+            pictureBoxAvatar_PKK.Image = (Image)resources.GetObject("pictureBoxAvatar_PKK.Image");
+            pictureBoxAvatar_PKK.Location = new Point(12, 11);
+            pictureBoxAvatar_PKK.Margin = new Padding(3, 2, 3, 2);
+            pictureBoxAvatar_PKK.Name = "pictureBoxAvatar_PKK";
+            pictureBoxAvatar_PKK.Size = new Size(188, 256);
+            pictureBoxAvatar_PKK.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxAvatar_PKK.TabIndex = 3;
+            pictureBoxAvatar_PKK.TabStop = false;
+            // 
+            // FormAbout
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(665, 278);
+            Controls.Add(CloseButton_PKK);
+            Controls.Add(labelInfo);
+            Controls.Add(pictureBoxAvatar_PKK);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormAbout";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "О программе";
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_PKK).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button CloseButton_PKK;
+        private Label labelInfo;
+        private PictureBox pictureBoxAvatar_PKK;
     }
 }
