@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Data.Common;
+using System.IO;
 
 namespace _123
 {
@@ -6,21 +7,19 @@ namespace _123
     {
         static void Main(string[] args)
         {
-            string res = "";
-            string path = Path.Combine("C:", "DataSprint6", "InPutDataFileTask6V13.txt");
+
+            string path = Path.Combine("C:", "DataSprint6", "InPutDataFileTask7V8.csv");
             using (StreamReader reader = new StreamReader(path))
             {
+                int[]
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] words = line.Split(' ');
-                    if (words.Length >= 2)
+                    for (int i = 0; i < line.Split("\n").Length; i++)
                     {
-                        res += words[words.Length - 2] + " ";
+
                     }
                 }
-                string res_trim = res.Trim();
-                Console.WriteLine(res_trim + "!");
             }
         }
     }
